@@ -1,0 +1,10 @@
+.image{
+    width: 5%;
+}
+
+header{
+    background-color: #34495e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
