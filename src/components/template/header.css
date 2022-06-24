@@ -1,10 +1,19 @@
-.image{
-    width: 5%;
-}
-
 header{
     background-color: #34495e;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.image{
+    width: 5%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.navbar {
+    width: 40%;
 }

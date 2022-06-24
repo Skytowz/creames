@@ -5,8 +5,12 @@ import './header.css';
 const Header = (props) =>{
     return(
         <header>
-            <img alt='logo' className="image" src={require("../../assets/images/logo-blanc.png")} />
-            <NavBar></NavBar>
+            <div className="image">
+                <img alt='logo'  src={require("../../assets/images/logo-blanc.png")} />
+            </div>
+            <div className="navbar">
+                <NavBar></NavBar>
+            </div>        
         </header>
     )
 }
