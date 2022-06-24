@@ -29,7 +29,7 @@ const Footer = (props) =>{
                 </div>
             </div>
             <div className="colonne_footer colonne_footer_quatre">
-                <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%204%20Av.%20de%20l'Horizon,%2059650%20Villeneuve-d'Ascq,%20France+(Creames)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/wearable-gps/">wearable gps</a></iframe>
+                <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="iframe_map" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%204%20Av.%20de%20l'Horizon,%2059650%20Villeneuve-d'Ascq,%20France+(Creames)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" ><a href="https://www.gps.ie/wearable-gps/">wearable gps</a></iframe>
             </div>
         </div>    
     )
