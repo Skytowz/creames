@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './navbar.css';
 
 const NavBar = (props) =>{
-    const user = window.sessionStorage.getItem("user");
+    //const user = window.sessionStorage.getItem("user");
     return(
         <nav>
             <div>
