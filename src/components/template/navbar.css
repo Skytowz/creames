@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    list-style-type:none;
+    margin-right: 32px;
+}
+
+li{
+    width: 20%;
+    font-size: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

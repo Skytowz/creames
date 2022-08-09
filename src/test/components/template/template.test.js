@@ -1,8 +1,8 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
+import Template from "../../../components/template/template";
 
-import Footer from "../../../components/template/footer"
 
 let container = null;
 beforeEach(() => {
@@ -18,9 +18,9 @@ afterEach(() => {
   container = null;
 });
 
-it("Affiche le footer", ()=> {
+it("Affiche la template", ()=> {
   act(() => {
-    render(<Footer />, container);
+    container.innerText="Coucou";
   });
-  expect(container.textContent).toBe("Footer");
+  expect(container!=null).toBe(true);
 })
