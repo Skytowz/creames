@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "./navbar";
+import NavBar from "../navbar/navbar";
 import './header.css';
 
 const Header = (props) =>{
     return(
         <header>
             <div className="image">
-                <img alt='logo'  src={require("../../assets/images/logo-blanc.png")} />
+                <img alt='logo'  src={require("../../../assets/images/logo-blanc.png")} />
             </div>
             <div className="navbar">
                 <NavBar></NavBar>

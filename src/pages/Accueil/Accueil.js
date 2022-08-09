@@ -1,22 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BoutonAccueil from '../../components/bouton/bouton_accueil/bouton_accueil';
 import Template from '../../components/template/template';
 import './Accueil.css';
 
 const Accueil = (props) => {
     return(
         <Template>
-            <div className='container'>
-                <div className='bouton_accueil bouton_creer'>
-                    <Link to="/creer-jeu" className='button'>
-                            Créer
-                    </Link>
-                </div>
-                <div className='bouton_accueil bouton_jouer'>
-                    <Link to="/jouer" className='button'>
-                            Jouer 
-                    </Link>
-                </div>
+            <div className='container_accueil'>
+                <BoutonAccueil to="/creer-jeu">
+                    Créer
+                </BoutonAccueil>
+                <BoutonAccueil to="/jouer">
+                    Jouer
+                </BoutonAccueil>
             </div>
         </Template>
     )

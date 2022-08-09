@@ -1,0 +1,59 @@
+.container_creer_jeu {
+    width: 100%;
+    min-height: 84vh;
+}
+
+.div_retour {
+    display: flex;
+}
+
+.retour {
+    width: 20%;
+}
+
+.button_retour {
+    border-radius: 4px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 24px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .button_retour{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button_retour:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;  
+    top: 15px;
+    left:-100px;
+    transition: 0.5s;
+  }
+  
+  .button_retour:hover{
+    padding-right: 8px;
+    padding-left:48px;
+  }
+  
+  .button_retour:hover:before {
+    opacity: 1;
+    left: 50px;
+  }
+
+  .inserer_tableau {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+  }

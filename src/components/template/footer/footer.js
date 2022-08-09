@@ -6,7 +6,7 @@ const Footer = (props) =>{
     return(
         <div className="footer">
             <div className="colonne_footer colonne_footer_un">
-                <img alt='logo'  src={require("../../assets/images/logo-blanc.png")} />
+                <img alt='logo'  src={require("../../../assets/images/logo-blanc.png")} />
             </div>
             <div className="colonne_footer colonne_footer_deux">
                 <h5>COORDONNÉES</h5>
