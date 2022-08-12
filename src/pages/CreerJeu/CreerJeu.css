@@ -1,59 +1,65 @@
 .container_creer_jeu {
-    width: 100%;
-    min-height: 84vh;
+  width: 100%;
+  min-height: 84vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.div_retour {
-    display: flex;
+.div_bouton_retour{
+  width: 100%;
 }
 
-.retour {
-    width: 20%;
+.inserer_plateau {
+  margin-left: auto;
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 10vh;
 }
 
-.button_retour {
-    border-radius: 4px;
-    background-color: #34495e;
-    border: none;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    padding: 16px;
-    width: 220px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 24px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  }
-  
-  .button_retour{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button_retour:before {
-    content: '<<';
-    position: absolute;
-    opacity: 0;  
-    top: 15px;
-    left:-100px;
-    transition: 0.5s;
-  }
-  
-  .button_retour:hover{
-    padding-right: 8px;
-    padding-left:48px;
-  }
-  
-  .button_retour:hover:before {
-    opacity: 1;
-    left: 50px;
-  }
+.div_bouton_suivant{
+  width:58%;
+}
 
-  .inserer_tableau {
-    margin: auto;
-    font-size: 24px;
-    font-weight: 500;
-  }
+.div_input_plateau{
+  position: relative;
+  width: 25%;
+  margin: auto;
+}
+
+.div_input_plateau input{
+  width: 100%;
+  padding: 30px 0px 30px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+
+}
+
+
+.div_input_plateau .label_input_plateau{
+  position: absolute;
+  left: 0;
+  top:0;
+  padding:10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgb(255 , 255, 255,0.5);
+  text-transform: uppercase; 
+  transition: 0.5;
+}
+
+.div_input_plateau input:valid ~ .label_input_plateau,
+.div_input_plateau input:focus ~ .label_input_plateau{
+  color:#fff;
+  transform: translate(15px,-20px);
+  font-size:0.35em;
+  background: var(--primary-color);
+  border-left: 3px solid #00dfc4;
+  border-right: 3px solid #00dfc4;
+  letter-spacing: 0.2rem;
+}

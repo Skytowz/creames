@@ -1,0 +1,48 @@
+.div_suivant {
+    display: flex;
+}
+
+.suivant {
+    width: 20%;
+}
+
+.button_suivant {
+    border-radius: 4px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 24px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .button_suivant{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button_suivant:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;  
+    top: 20px;
+    right:-100px;
+    transition: 0.5s;
+  }
+  
+  .button_suivant:hover{
+    padding-right: 48px;
+    padding-left:8px;
+  }
+  
+  .button_suivant:hover:after {
+    opacity: 1;
+    right: 30px;
+  }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import BoutonAccueil from '../../components/bouton/bouton_accueil/bouton_accueil';
 import Template from '../../components/template/template';
 import './Accueil.css';

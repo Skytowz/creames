@@ -1,0 +1,24 @@
+.container_ajouter_infos {
+    width: 100%;
+}
+
+.colonne_nom_jeu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 50%;
+    margin: auto;
+    padding: 3vh 0;
+}
+
+.div_label_nom_jeu, .div_input_nom_jeu{
+    width: 50%;
+}
+
+.div_textarea {
+    padding-bottom: 4vh;
+}
+
+.div_suivant {
+    margin: auto;
+}
