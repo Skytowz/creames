@@ -1,0 +1,49 @@
+.global_mep_jeu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div_map_mep_jeu {
+    width: 70%;
+}
+
+.div_map_deux_mep_jeu {
+    width: 30%;
+    background-color: #696969;
+}
+
+.image_map_mep_jeu {
+    width:800px;
+    height: 800px;
+}
+
+canvas {
+    width:800px;
+    height: 800px;  
+    position: absolute;
+}
+
+.div_options {
+    width: 100%;
+    background-color: #a3a3a3;
+    min-height: 10%;
+    color: white;
+}
+
+.div_options{
+   border:solid white;
+   border-width: 2px 0px;
+}
+
+.div_options_caches {
+    display: none;
+    margin-bottom: 3vh;
+}
+
+.textarea_general {
+    display: block;
+    margin: auto;
+    width: 80%;
+    min-height: 100px;
+}

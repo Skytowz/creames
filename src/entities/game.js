@@ -26,7 +26,7 @@ class Game {
     get id(){
         return this._id;
     }
-4
+
     set id(id){
         this._id = id;
         return this;
@@ -34,7 +34,7 @@ class Game {
     get nom(){
         return this._id;
     }
-4
+
     set nom(nom){
         this._nom = nom;
         return this;
@@ -42,7 +42,7 @@ class Game {
     get nbJoueurMax(){
         return this._nbJoueurMax;
     }
-4
+
     set nbJoueurMax(nbJoueurMax){
         this._nbJoueurMax = nbJoueurMax;
         return this;
@@ -50,7 +50,7 @@ class Game {
     get nbJoueurMin(){
         return this._nbJoueurMin;
     }
-4
+
     set nbJoueurMin(nbJoueurMin){
         this._nbJoueurMin = nbJoueurMin;
         return this;
@@ -58,7 +58,7 @@ class Game {
     get regle(){
         return this._regle;
     }
-4
+
     set regle(regle){
         this._regle = regle;
         return this;
@@ -66,7 +66,7 @@ class Game {
     get plateau(){
         return this._plateau;
     }
-4
+
     set plateau(plateau){
         this._plateau = plateau;
         return this;
@@ -74,7 +74,7 @@ class Game {
     get cases(){
         return this._cases;
     }
-4
+
     set cases(cases){
         this._cases = cases;
         return this;
@@ -82,7 +82,7 @@ class Game {
     get auteur(){
         return this._auteur;
     }
-4
+
     set auteur(auteur){
         this._auteur = auteur;
         return this;
@@ -90,7 +90,7 @@ class Game {
     get des(){
         return this._des;
     }
-4
+
     set des(des){
         this._des = des;
         return this;

@@ -5,14 +5,14 @@ import './navbar.css';
 const NavBar = (props) =>{
     //const user = window.sessionStorage.getItem("user");
     return(
-        <nav>
-            <div>
-                <ul>
-                    <li><Link to="/">Nos jeux</Link></li>
-                    <li><Link to="/">Créer un jeu</Link></li>
-                </ul>
+        <> 
+            <div className="navbar_div">
+                <p><Link to="/">Nos jeux</Link></p>
             </div>
-        </nav>
+            <div className="navbar_div">
+                <p><Link to="/">Créer un jeu</Link></p>
+            </div>
+        </>
     )
  
 }
