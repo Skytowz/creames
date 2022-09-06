@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Template from '../../components/template/template';
 import Game from '../../entities/game';
 import './MepJeu.css';
 
 
-const MepJeu =  (props) => {
+const MepJeu = (props) => {
 
     const location = useLocation();
-    
+
     const jeu = new Game(location.state.jeu);
-    
+
+
+    const refreshCanvas = (canvas,ctx) => {
+        const image = new Image(canvas.width,canvas.height);
+        image.src = jeu.plateau;
+        if(image.complete){
+            canvas.setAttribute('width', window.innerWidth/2)
+            canvas.setAttribute('height', image.naturalHeight*(window.innerWidth/2)/image.naturalWidth)
+            ctx.drawImage(image,0,0,canvas.width,canvas.height);
+        }else{
+            image.onload = () =>{
+                canvas.setAttribute('width', window.innerWidth/2)
+                canvas.setAttribute('height', image.naturalHeight*(window.innerWidth/2)/image.naturalWidth)
+                ctx.drawImage(image,0,0,canvas.width,canvas.height);
+            }
+        }
+    }
+
     const test = (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -22,15 +39,29 @@ const MepJeu =  (props) => {
         }       
     }
 
+    useEffect(() => {
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+        refreshCanvas(c,ctx);
+        window.addEventListener('resize', () => refreshCanvas(c,ctx));
+        //ctx.beginPath();
+        //ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+        //ctx.stroke();
+    },[]);
+
+
+
+
     return(
         <Template>
             <form>
                 <div className='global_mep_jeu'>
                     <div className="div_map_mep_jeu">
-                        <canvas>
+                        
+                        {/* <img className='image_map_mep_jeu' src={jeu.plateau} id="testimg" style={{width:"50%" , height:"auto"}}/> */}
+                        <canvas className='myCanvas' id='myCanvas'>
                             
                         </canvas>
-                        <img className='image_map_mep_jeu' src={jeu.plateau} />
                     </div>
                     <div className="div_map_deux_mep_jeu">
                         <div className='div_options' onClick={test}>

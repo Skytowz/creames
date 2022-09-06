@@ -14,14 +14,10 @@
 }
 
 .image_map_mep_jeu {
-    width:800px;
-    height: 800px;
-}
 
-canvas {
-    width:800px;
-    height: 800px;  
+
     position: absolute;
+    z-index: -1;
 }
 
 .div_options {
@@ -47,3 +43,4 @@ canvas {
     width: 80%;
     min-height: 100px;
 }
+
